@@ -2390,13 +2390,13 @@ ensure that the public_name can be authenticated.  Clients SHOULD ignore any
 <code>ECHConfig</code> structure with a public_name that is not a vaild host name in
 preferred name syntax (see <span><a href="https://rfc-editor.org/rfc/rfc8499#section-2" class="relref">Section 2</a> of [<a href="#DNS-TERMS" class="cite xref">DNS-TERMS</a>]</span>).  That is, to be
 valid, the public_name needs to be a dot-separated sequence of LDH labels, as
-defined in <span>[<a href="#RFC5890" class="cite xref">RFC5890</a>], <a href="https://rfc-editor.org/rfc/rfc5890#section-2.3.1" class="relref">Section 2.3.1</a></span>, where:<a href="#section-6.1.7-5" class="pilcrow">¶</a></p>
+defined in <span><a href="https://rfc-editor.org/rfc/rfc5890#section-2.3.1" class="relref">Section 2.3.1</a> of [<a href="#RFC5890" class="cite xref">RFC5890</a>]</span>, where:<a href="#section-6.1.7-5" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-6.1.7-6.1">
               <p id="section-6.1.7-6.1.1">the sequence does not begin or end with an ASCII dot;<a href="#section-6.1.7-6.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-6.1.7-6.2">
-              <p id="section-6.1.7-6.2.1">all labels are no more than 63 octets; and<a href="#section-6.1.7-6.2.1" class="pilcrow">¶</a></p>
+              <p id="section-6.1.7-6.2.1">all labels are at most 63 octets; and<a href="#section-6.1.7-6.2.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-6.1.7-6.3">
               <p id="section-6.1.7-6.3.1">the sequence does not parse as an IPv4 address <span>[<a href="#RFC0790" class="cite xref">RFC0790</a>]</span> in textual form,
